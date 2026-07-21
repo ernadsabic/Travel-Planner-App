@@ -6,8 +6,8 @@ import { prisma } from "./lib/prisma";
 export const { auth, handlers, signIn, signOut } = NextAuth({
   providers: [
     GitHub({
-      clientId: process.env.AUTH_GITHUB_ID, // Ručno mu guramo ID iz .env
-      clientSecret: process.env.AUTH_GITHUB_SECRET, // Ručno mu guramo Secret iz .env
+      clientId: process.env.AUTH_GITHUB_ID, 
+      clientSecret: process.env.AUTH_GITHUB_SECRET, 
     }),
   ],
   adapter: PrismaAdapter(prisma),

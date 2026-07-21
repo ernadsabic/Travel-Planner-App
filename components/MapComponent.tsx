@@ -43,13 +43,12 @@ const MapComponent = ({ itineraries }: Props) => {
         scrollWheelZoom={true}
         className="w-full h-full"
       >
-        {/* OpenStreetMap "tiles" - besplatni izgled mape */}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
-        {/* Renderovanje tvojih lokacija iz baze */}
+        
         {itineraries.map((loc) => (
           <Marker key={loc.id} position={[loc.lat, loc.lng]} icon={customIcon}>
             <Popup>
