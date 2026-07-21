@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "Travel Planner",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-img.png",
         width: 1200,
         height: 630,
         alt: "Travel Planner App Preview",
