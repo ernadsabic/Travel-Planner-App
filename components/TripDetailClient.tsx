@@ -1,12 +1,12 @@
 "use client";
-import { Trip } from "@/app/generated";
+import type { Trip } from "@prisma/client";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Calendar, MapPin, Plus } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
-import { Location } from "@/app/generated";
+import type { Location } from "@prisma/client";
 import dynamic from "next/dynamic";
 import SortableItinerary from "./SortableItinerary";
 

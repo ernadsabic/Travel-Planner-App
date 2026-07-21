@@ -1,4 +1,4 @@
-import { Location } from "@/app/generated";
+import type { Location } from "@prisma/client";
 import { DndContext, closestCenter, DragEndEvent } from "@dnd-kit/core";
 import {
   arrayMove,
