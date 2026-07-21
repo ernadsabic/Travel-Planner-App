@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-travel-planner.com"),
+  metadataBase: new URL("https://travel-planner-app-bay.vercel.app/"),
 
   title: {
     default: "Travel Planner | Plan Your Trips and Itineraries",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Travel Planner | Plan Your Perfect Trip",
     description:
       "Create custom itineraries, manage expenses, and organize your travel destinations stress-free.",
-    url: "https://your-travel-planner.com",
+    url: "https://travel-planner-app-bay.vercel.app/",
     siteName: "Travel Planner",
     images: [
       {
