@@ -10,7 +10,14 @@ const NewTrip = () => {
   const [isPending, startTransition] = useTransition();
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   return (
-    <section className="pt-16 md:pt-20 min-h-[calc(100dvh-5.2rem)] bg-[url(/newtrip.jpg)] bg-no-repeat bg-center bg-cover relative">
+    <section className="pt-16 md:pt-20 min-h-[calc(100dvh-5.2rem)] relative">
+      <Image
+        src={"/newtrip.webp"}
+        fill
+        priority
+        className="object-cover object-center"
+        alt="Hero Image"
+      />
       <div className="max-w-lg mx-auto  relative z-20">
         <Card className="shadow-md p-6 bg-transparent backdrop-blur-3xl">
           <CardHeader className="font-bold text-2xl text-white text-center mb-4">

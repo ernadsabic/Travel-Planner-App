@@ -1,6 +1,7 @@
 import { Map as MapIcon } from "lucide-react";
 import { auth } from "@/auth";
 import AuthButton from "@/components/AuthButton";
+import Image from "next/image";
 
 export default async function LandingPage() {
   const session = await auth();
@@ -11,10 +12,17 @@ export default async function LandingPage() {
       {/* Main Content */}
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-20 md:py-32 bg-[url(/hero-bg.jpg)] bg-center bg-cover bg-no-repeat">
+        <section className="relative py-20 md:py-32 overflow-hidden">
+          <Image
+            src={"/hero-bg.webp"}
+            fill
+            priority
+            className="object-cover object-center"
+            alt="Hero Image"
+          />
           <div className="container mx-auto px-4 relative z-20">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-6xl text-white font-bold mb-6 ">
+              <h1 className="text-4xl md:text-6xl text-white font-bold mb-6">
                 Plan your perfect trip, every time
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-8">
